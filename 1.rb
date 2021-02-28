@@ -16,6 +16,18 @@
 #
 ## Решение:
 
+mode = "r"
+flor = 0
+file = File.open("data/1.txt", mode) do |file|
+    currentSymbol = file.readlines.
+    if currentSymbol == ")"
+        flor -= 1
+    else
+        flor += 1
+    end
+end
+
+puts flor
 
 
 
